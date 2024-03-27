@@ -1,0 +1,578 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-color: #f4f7fa;
+}
+
+:root {
+  --light-blue: #005bdc;
+  --dark-blue: #0068f9;
+  --light-grey: #404348;
+  --very-light-grey: #ccccce;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1350px;
+  width: 86%;
+  margin: 0 auto;
+}
+
+/*=================================
+  Header styling starts here
+=================================*/
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin-top: 238.4px;
+  margin-bottom: 238.4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  width: 68%;
+  padding: 72px 80px 140px 80px;
+  background-color: #fff;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 33px;
+}
+
+.header-top p {
+  font-size: 18px;
+  color: var(--very-light-grey);
+}
+
+.header-top p span {
+  color: var(--dark-blue);
+  font-weight: bold;
+}
+
+.header-bottom a {
+  color: var(--light-blue);
+  font-weight: 500;
+  margin-bottom: 29px;
+  display: inline-block;
+}
+
+/*=================================
+  Header styling ends here
+=================================*/
+
+.main-container,
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+main .card-left,
+.price-container {
+  flex-basis: 29%;
+}
+
+main .card-left figure,
+main .card-left figure img {
+  width: 100%;
+}
+
+main .card-right {
+  flex-basis: 70%;
+}
+
+h2 {
+  font-size: 18.5px;
+  margin-bottom: 12px;
+}
+
+.card-right-top p {
+  font-size: 16.5px;
+  line-height: 1.55;
+}
+
+.card-right-middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-right-top {
+  margin-bottom: 41px;
+}
+
+.card-right-top,
+.card-right-middle {
+  width: 83%;
+}
+
+.card-right-middle li {
+  font-size: 13px;
+  color: var(--light-blue);
+  line-height: 23px;
+}
+
+h3 {
+  font-size: 19px;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.director {
+  margin-bottom: 21px;
+}
+
+.card-right-bottom a {
+  font-size: 14px;
+  color: var(--light-blue);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.price-container,
+.card-right-end {
+  display: flex;
+  align-items: center;
+}
+
+.price-container {
+  justify-content: space-between;
+}
+
+.price-container p {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.price-container button {
+  padding: 7px 0;
+  width: 34%;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #fff;
+  border: 2.5px solid;
+}
+
+.icon {
+  display: inline-block;
+  text-indent: -9999px;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 3px;
+}
+
+.you-tube::before {
+  text-indent: 0;
+  content: "\f04b";
+  font-family: "FontAwesome";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.card-right-end p {
+  color: var(--very-light-grey);
+  font-size: 14px;
+}
+
+.card-right {
+  position: relative;
+}
+
+.card-right-bottom {
+  position: absolute;
+  bottom: 3px;
+}
+
+.modal-box {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.modal-box-wrapper {
+  width: 35%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 25px 25px;
+  background-color: #f4f7fa;
+}
+
+.close {
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.close::before {
+  text-indent: 0;
+  content: "\f00d";
+  font-family: "FontAwesome";
+  position: absolute;
+  right: 0;
+  font-size: 25px;
+}
+
+.close-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 5px;
+}
+
+.close-container:hover {
+  cursor: pointer;
+  color: #ff0000;
+  transition: ease-in-out 0.3s;
+}
+
+.show {
+  display: block;
+}
+
+.you-tube:hover,
+.price-container button:hover,
+.header-bottom a:hover,
+ul li a:hover {
+  cursor: pointer;
+}
+
+.header-bottom a:hover,
+ul li a:hover {
+  text-decoration: underline;
+}
+
+.price-container button:hover {
+  background-color: #1d1f26;
+  color: #fff;
+  border: 2.5px solid #1d1f26;
+}
+
+.end-container:hover {
+  background-color: #9d0b17;
+  transition: all 0.3s;
+}
+
+.card-right-end:hover .you-tube::before {
+  color: #9d0b17;
+  transition: all 0.3s;
+}
+
+.end-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: #000;
+  border-radius: 25px;
+}
+
+.end-container p {
+  flex-grow: 1;
+  text-align: center;
+  padding: 0px 15px;
+}
+
+.card-right-end {
+  justify-content: flex-end;
+}
+
+.card-left,
+.card-right {
+  position: relative;
+}
+
+.price-container,
+.card-right-end {
+  position: absolute;
+  bottom: -60px;
+}
+
+.price-container {
+  width: 100%;
+}
+
+.card-right-end {
+  width: 83%;
+}
+
+.card-right-middle {
+  margin-bottom: 30px;
+}
+
+/*=================================
+  main styling starts here
+=================================*/
+
+/*=================================
+  main styling ends here
+=================================*/
+
+/*Responsive Design Desktop-first-approach*/
+/*media query for 1440px starts here*/
+@media only screen and (max-width: 1496px) {
+  .container {
+    width: 76%;
+  }
+
+  .card-right-top {
+    margin-bottom: 30px;
+  }
+
+  .card-right-top,
+  .card-right-middle,
+  .card-right-end {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .container {
+    width: 86%;
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+
+  .main-container {
+    gap: 30px;
+  }
+
+  .card-right-top,
+  .card-right-middle,
+  .card-right-end {
+    width: 100%;
+  }
+
+  .card-right-top {
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+
+  .card-right-middle li {
+    line-height: 28px;
+  }
+}
+
+/*media query for 1024px starts here*/
+@media only screen and (max-width: 1200px) {
+  .card-right-middle li {
+    line-height: 24px;
+  }
+
+  main .card-left,
+  .price-container {
+    flex-basis: 40%;
+  }
+
+  .container {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
+  .modal-box-wrapper {
+    width: 50%;
+  }
+}
+
+/*media query for 1024px starts here*/
+@media only screen and (max-width: 1024px) {
+  .card-right-middle li {
+    line-height: 22px;
+  }
+
+  .container {
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+}
+
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  main .card-left figure {
+    width: 50%;
+    height: 400px;
+    margin: 0 auto;
+  }
+
+  .card-left figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .price-container {
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  main .card-right {
+    margin-top: 60px;
+  }
+
+  .price-container button {
+    width: 28%;
+  }
+
+  .you-tube {
+    width: 35px;
+    height: 35px;
+  }
+
+  .card-right-middle {
+    margin-bottom: 35px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+
+  .card-right-end p {
+    font-size: 13px;
+  }
+
+  .container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 60px 80px 120px 80px;
+  }
+
+  .modal-box-wrapper {
+    width: 60%;
+  }
+}
+
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  main .card-left figure,
+  .price-container {
+    width: 70%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .header-top {
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 5px;
+  }
+
+  .header-bottom a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .card-right-middle {
+    flex-wrap: wrap;
+  }
+
+  .card-right-middle > * {
+    flex-basis: 50%;
+  }
+
+  .Producers {
+    margin-bottom: 15px;
+    margin-top: 20px;
+  }
+
+  .container {
+    padding: 60px 40px 120px 40px;
+  }
+}
+
+/*media query for 540px starts here*/
+@media only screen and (max-width: 540px) {
+  main .card-left figure,
+  .price-container {
+    width: 100%;
+  }
+
+  .container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 40px 30px 120px 30px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .header-top p {
+    font-size: 17px;
+  }
+
+  .header-bottom a {
+    font-size: 15px;
+  }
+
+  .card-right-top p {
+    font-size: 15px;
+  }
+
+  .modal-box-wrapper {
+    width: 75%;
+  }
+}
+
+/*media query for 480px starts here*/
+@media only screen and (max-width: 420px) {
+  h1 {
+    font-size: 19px;
+    text-align: center;
+  }
+
+  .header-top p {
+    font-size: 16px;
+  }
+
+  .header-bottom a {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 40px 10px 120px 10px;
+  }
+
+  .modal-box-wrapper {
+    width: 86%;
+  }
+}
